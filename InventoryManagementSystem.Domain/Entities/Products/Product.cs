@@ -1,11 +1,10 @@
-﻿using InventoryManagementSystem.Domain.Common;
-using InventoryManagementSystem.Domain.Entities.Categories;
+﻿using InventoryManagementSystem.Domain.Entities.Categories;
 using InventoryManagementSystem.Domain.Entities.Relations;
 using InventoryManagementSystem.Domain.Entities.Suppliers;
 
 namespace InventoryManagementSystem.Domain.Entities.Products
 {
-    internal class Product : BaseEntity<int>
+    public class Product : BaseEntity<int>
     {
         public string Name { get; set; } = default!;
         public string Description { get; set; } = default!;

@@ -1,6 +1,6 @@
-﻿namespace InventoryManagementSystem.Domain.Common
+﻿namespace InventoryManagementSystem.Domain.Entities
 {
-    internal abstract class BaseEntity<TKey>
+    public abstract class BaseEntity<TKey>
     {
         public TKey Id { get; set; } = default!;
         public DateTime CreatedAt { get; set; } = DateTime.Now;

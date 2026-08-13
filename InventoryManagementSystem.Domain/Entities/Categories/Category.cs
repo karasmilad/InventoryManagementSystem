@@ -1,9 +1,8 @@
-﻿using InventoryManagementSystem.Domain.Common;
-using InventoryManagementSystem.Domain.Entities.Products;
+﻿using InventoryManagementSystem.Domain.Entities.Products;
 
 namespace InventoryManagementSystem.Domain.Entities.Categories
 {
-    internal class Category : BaseEntity<int>
+    public class Category : BaseEntity<int>
     {
         public string Name { get; set; } = default!;
         public string Description { get; set; } = default!;

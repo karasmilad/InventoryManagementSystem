@@ -3,7 +3,7 @@ using InventoryManagementSystem.Domain.Entities.Suppliers;
 
 namespace InventoryManagementSystem.Domain.Entities.Relations
 {
-    internal class ProductSupplier
+    public class ProductSupplier
     {
         public int ProductId { get; set; }
         public Product Product { get; set; } = default!;
