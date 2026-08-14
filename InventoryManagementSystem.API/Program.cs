@@ -1,4 +1,7 @@
 
+using InventoryManagementSystem.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace InventoryManagementSystem.API
 {
     public class Program
@@ -8,7 +11,7 @@ namespace InventoryManagementSystem.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddDbContext<StoreDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
